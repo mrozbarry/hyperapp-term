@@ -1,0 +1,20 @@
+{
+  "name": "hyperapp-term",
+  "version": "1.0.0",
+  "description": "Hyperapp Terminal",
+  "main": "electronEntry.js",
+  "scripts": {
+    "tailwind": "tailwind -o ./styles.css",
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [],
+  "author": "Alex Barry",
+  "license": "MIT",
+  "devDependencies": {
+    "composable-state": "^0.1.0",
+    "electron": "^21.1.1",
+    "hyperapp": "^2.0.22",
+    "tailwindcss": "^3.2.1"
+  }
+}
