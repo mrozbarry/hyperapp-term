@@ -1,4 +1,4 @@
-import { h, text } from '../node_modules/hyperapp/index.js';
+import { h, text } from '../../node_modules/hyperapp/index.js';
 
 const duration = '500ms';
 export const CLASSES = {

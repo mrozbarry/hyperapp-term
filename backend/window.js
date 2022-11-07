@@ -7,8 +7,8 @@ const frontendPath = path.join(__dirname, '..', 'frontend');
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1920,
+    height: 1000,
     webPreferences: {
         preload: path.join(frontendPath, 'glue', 'preload.js'),
         nodeIntegration: true

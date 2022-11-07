@@ -1,4 +1,4 @@
-import { h, text } from '../node_modules/hyperapp/index.js';
+import { h, text } from '../../node_modules/hyperapp/index.js';
 import { input } from '../components/input.js';
 
 export const prompt = (props) => h('form', {
@@ -10,7 +10,13 @@ export const prompt = (props) => h('form', {
     class: 'flex-shrink px-2',
   }, text(props.cwd)),
 
-  input(props.command, {
-    oninput: props.onCommandInput,
+  h('input', {
+    key: 'main-input',
+    autofocus: true,
+    value: props.command,
+    oninput: (_, event) => [
+      props.onCommandInput,
+      event.target.value,
+    ],
   }),
 ]);
