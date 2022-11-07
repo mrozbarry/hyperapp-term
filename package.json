@@ -2,10 +2,10 @@
   "name": "hyperapp-term",
   "version": "1.0.0",
   "description": "Hyperapp Terminal",
-  "main": "electronEntry.js",
+  "main": "backend/index.js",
   "scripts": {
     "tailwind": "tailwind -o ./styles.css",
-    "start": "electron ."
+    "start": "electron ./backend/index.js"
   },
   "repository": "",
   "keywords": [],

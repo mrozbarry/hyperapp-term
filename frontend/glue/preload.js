@@ -9,5 +9,6 @@
 const { contextBridge, ipcRenderer } = require('electron')
 
 contextBridge.exposeInMainWorld('electronAPI', {
-    sendCommand: (directory, command) => ipcRenderer.send('command', 'tacos')
+  sendCommand: (command) => ipcRenderer.send('command', command),
+
 })
