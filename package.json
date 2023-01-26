@@ -13,7 +13,7 @@
   "license": "MIT",
   "devDependencies": {
     "composable-state": "^0.1.0",
-    "electron": "^21.1.1",
+    "electron": "^22.1.0",
     "hyperapp": "^2.0.22",
     "tailwindcss": "^3.2.1"
   }
